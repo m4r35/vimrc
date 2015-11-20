@@ -3,7 +3,16 @@
 "       This requries that you install https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin on
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" =>  My key remapings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+:nnoremap <C-g> :NERDTree<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
@@ -36,10 +45,9 @@ if has("gui_running")
     set background=dark
     colorscheme peaksea
 else
-    colorscheme desert
+    colorscheme monokai
     let g:colors_name="desert"
 endif
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
